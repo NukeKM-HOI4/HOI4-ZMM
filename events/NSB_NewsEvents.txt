@@ -1,0 +1,268 @@
+﻿add_namespace = nsb_news
+
+# The Death of Stalin
+news_event = {
+	id = nsb_news.11
+	title = nsb_news.11.t
+	desc = nsb_news.11.desc
+	picture = GFX_news_event_generic_funeral
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nsb_news.11.a
+		trigger = { 
+			NOT = { has_country_leader_ideology = stalinism } 
+		}
+	}
+	option = {
+		name = nsb_news.11.b
+		trigger = { has_country_leader_ideology = stalinism }
+	}
+
+}
+
+# Trotsky Assassination (raid on his villa)
+news_event = {
+	id = nsb_news.100
+	title = news.37.t
+	desc = nsb_news.100.desc
+	picture = GFX_news_event_024
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = SOV
+				}
+				SOV_kill_trotsky_effect = yes
+			}
+		}
+	}
+	
+	option = {
+		name = news.37.a
+		trigger = { 
+			NOT = { 
+				TAG = SOV 
+				is_in_faction_with = SOV
+				tag = MEX
+			} 
+		}
+	}
+
+	option = {
+		name = news.37.a
+		trigger = {
+			tag = MEX
+			NOT = { is_in_faction_with = SOV }
+		}
+
+		effect_tooltip = {
+			retire_character = MEX_leon_trotsky
+		}
+	}
+
+	option = {
+		name = news.37.b
+		trigger = { TAG = SOV }
+
+		if = {
+			limit = {
+				has_idea = trotskyite_plot_nsb
+			}
+			effect_tooltip = {
+				retire_character = SOV_lev_trotsky
+			}
+			swap_ideas = {
+				remove_idea = trotskyite_plot_nsb
+				add_idea = trotskyite_plot_purged
+			}
+		}
+	}
+
+	option = {
+		name = news.37.c
+		trigger = { 
+			is_in_faction_with = SOV
+			NOT = {
+				tag = SOV
+			} 
+		}
+	}
+}
+
+# Trotsky Survives Assassination (raid on his villa)
+news_event = {
+	id = nsb_news.101
+	title = news.38.t
+	desc = nsb_news.101.desc
+	picture = GFX_news_event_023
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = trotsky_survives
+	}
+	
+	option = {
+		name = news.38.a
+		trigger = { NOT = { TAG = SOV } }
+	}
+	option = {
+		name = news.38.b
+		trigger = { TAG = SOV }
+	}
+}
+
+
+# Anglo-Soviet Invasion of Iran
+news_event = {
+	id = nsb_news.104
+	title = nsb_news.104.t
+	desc = nsb_news.104.desc
+	picture = GFX_news_event_SOV_invasion_iran
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #SOV || GER
+		name = nsb_news.104.a
+
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = ENG
+			}
+		}
+	}
+
+	option = { #Others
+		name = nsb_news.104.b
+
+		trigger = {
+			NOT = {
+				tag = SOV
+				tag = ENG
+			}
+		}
+	}
+}
+
+#New 4th International News Event
+news_event = {
+	id = NSB_news.200
+	title = news.173.t
+	picture = GFX_news_event_023
+	
+	major = yes
+
+	trigger = {
+		NOT = { has_global_flag = SOV_fourth_international_fired }
+		SOV = {	has_government = communism }
+		date > 1938.9.1
+	}
+
+	immediate = {
+		set_global_flag = SOV_fourth_international_fired
+	}
+
+	mean_time_to_happen = { days = 14 }
+
+	
+	desc = {
+		#NOT Trotsky
+		text = news.173.d_2
+		trigger = {
+			tag = SOV
+		}
+	}
+
+	option = {
+		name = news.173.a
+		trigger = { NOT = {	tag = SOV } }
+		#Commie countries or countries with more than 30% communism get +10% support
+		if = {
+			limit = {
+				NOT = { has_country_leader_ideology = stalinism }
+				OR = {
+					has_government = communism
+					communism > 0.3
+				}
+				NOT = { has_country_flag = banned_communism_flag }
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+		#Countries with more than 10% communism get +5% support
+		else_if = {
+			limit = {
+				NOT = { has_country_leader_ideology = stalinism }
+				communism > 0.1
+				NOT = { has_country_flag = banned_communism_flag }
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+
+		if = {
+			limit = {
+				has_government = communism
+				NOT = { has_country_leader_ideology = stalinism }
+			}
+			add_opinion_modifier = {
+				target = FROM
+				modifier = SOV_fourth_international_good
+			}
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = SOV_fourth_international_good
+				}
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = FROM		
+				value = 5
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = FROM		
+				value = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = stalinism
+			}
+			add_opinion_modifier = {
+				target = FROM
+				modifier = SOV_fourth_international_bad
+			}
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = SOV_fourth_international_bad
+				}
+			}
+			add_ai_strategy = {
+				type = antagonize
+				id = FROM		
+				value = 5
+			}
+		}
+
+	}
+	
+}

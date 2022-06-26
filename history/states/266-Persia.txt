@@ -1,0 +1,25 @@
+
+state={
+	id=266
+	name="STATE_266" # Tehran
+	manpower = 1
+	
+	state_category = town
+resources {
+	oil=110
+}
+	history={
+		owner = PER
+		add_core_of = PER
+		1936.1.1.13 = {
+			owner = WST
+            add_core_of = WST
+		}
+	}
+
+	provinces={
+		4580 7602 10385 10768 10837 
+	}
+
+	local_supplies=0.0 
+}

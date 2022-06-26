@@ -1,0 +1,146 @@
+ROM_change_sides = {
+
+	
+	# Axis
+
+	ROM_change_sides_to_axis = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = ROM
+		}
+
+		available = {
+			is_faction_leader = no
+			has_capitulated = no
+			any_country = {
+				is_faction_leader = yes
+				has_war_with = ROM
+				OR = {
+					has_government = fascism
+					original_tag = GER
+					original_tag = ITA
+				}
+			}
+			OR = {
+				has_country_leader = {
+					name = "Michael I"
+					ruling_only = yes
+				}
+				has_government = fascism
+			}
+			NOT = {
+				FACTION_LEADER  = {
+					has_government = fascism
+				}
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = romania_has_flipped_sides } #Romania shouldn't be able to keep switching sides all the time
+			}
+		}
+		
+		visible = {
+			is_faction_leader = no # you shouldn't be able to betray your own faction
+			original_tag = ROM
+			NOT = { has_country_flag = romania_has_flipped_sides }
+			hidden_trigger = { has_country_flag = can_change_sides_fas }
+		}
+
+		cost = 0
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			hidden_effect = { clr_country_flag = can_change_sides_fas }
+		}
+
+		complete_effect = {
+			#save current faction leader for use in the event
+			hidden_effect = {
+				random_country = {
+					limit = {
+						is_in_faction_with = ROOT
+						is_faction_leader = yes
+					}
+					save_global_event_target_as = romania_former_ally_target
+				}
+			}
+			#top priority is joining the Axis if they still exist
+			if = {
+				limit = {
+					any_country = {
+						is_faction_leader = yes
+						has_war_with = ROM
+						has_government = fascism
+						OR = {
+							original_tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				random_enemy_country = {
+					limit = {
+						is_faction_leader = yes
+						has_war_with = ROM
+						has_government = fascism
+						OR = {
+							original_tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					save_event_target_as = romania_new_ally_target
+				}
+			}
+			#then attempts to join Italy's faction
+			else_if = {
+				limit = {
+					any_country = {
+						is_faction_leader = yes
+						has_war_with = ROM
+						has_government = fascism
+						OR = {
+							original_tag = ITA
+							is_in_faction_with = ITA
+						}
+					}
+				}
+				random_enemy_country = {
+					limit = {
+						is_faction_leader = yes
+						has_war_with = ROM
+						has_government = fascism
+						OR = {
+							original_tag = ITA
+							is_in_faction_with = ITA
+						}
+					}
+					save_event_target_as = romania_new_ally_target
+				}
+			}
+			#then attempts to join any fascist faction
+			else = {
+				random_enemy_country = {
+					limit = {
+						is_faction_leader = yes
+						has_war_with = ROM
+						has_government = fascism
+					}
+					save_event_target_as = romania_new_ally_target
+				}
+			}
+			event_target:romania_new_ally_target = {
+				country_event = { id = DOD_romania.16 }
+			}
+			hidden_effect = {
+				set_country_flag = romania_has_flipped_sides
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+	}
+	
+}
