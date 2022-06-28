@@ -423,7 +423,15 @@ ITA_empire_decision_categories = {
 		complete_effect   = {
 			army_experience = 10
 			navy_experience = 10
-			
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 44
+						state = 805
+					}	
+				}
+				add_compliance = 100
+			}
 			
 			set_country_flag = ITA_albania_conquest_flag
 		}
