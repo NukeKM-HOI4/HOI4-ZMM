@@ -898,7 +898,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 0
+			factor = 25
 		}
 
 		available = {
@@ -1037,7 +1037,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 0
+			factor = 35
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_heavy_bombers
