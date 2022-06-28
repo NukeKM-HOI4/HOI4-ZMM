@@ -2,8 +2,10 @@ version="1.0"
 tags={
 	"Historical"
 }
-name="Hirohito vs Pausers"
+name="Zalupa Multiplayer Mod"
 supported_version="1.11.*"
+picture="thumbnail.png"
+remote_file_id="2826741028"
 
 # Replaced directories (do not delete)
 replace_path="common/abilities"
