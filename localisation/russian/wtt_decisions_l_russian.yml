@@ -649,6 +649,16 @@
  develop_uralsk_chromium_deposits_1:0 "Разработка месторождений хрома в Уральске"
  develop_uralsk_chromium_deposits_2:0 "Расширение добычи хрома в Уральске"
  develop_chosen_tungsten_deposits:0 "Расширение добычи вольфрама в Чосине"
+ 
+ # ZMM
+ develop_kyusu_aluminium_deposits:0 "Наколдовать алюминий"
+ expand_kyusu_aluminium_deposits:0 "БОЛЬШЕ АЛЮМИНИЯ"
+ develop_kyusu_steel_deposits:0 "Наколдовать стали"
+ develop_tugoku_steel_deposits:0 "Нужно больше стали"
+ expand_tugoku_steel_deposits:0 "Нужно ещё больше стали" 
+ develop_sikoku_steel_deposits:0 "Выпустить \"Стального Алхимика\""
+ expand_sikoku_steel_deposits:0 "Стальной Алхимик: Завоеватель Сикоку"
+ 
  CHI_suspend_the_inter_party_coordination_council:0 "Роспуск межпартийного координационного совета"
  CHI_suspend_the_inter_party_coordination_council_desc:0 "Мы можем временно приостановить деятельность совета, если она начнет угрожать интересам нации. Если ситуация изменится, мы возобновим его деятельность."
  CHI_reinstate_the_inter_party_coordination_council:0 "Возвращение межпартийного координационного совета"
