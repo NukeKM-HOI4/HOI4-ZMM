@@ -3,11 +3,7 @@ tags={
 	"Historical"
 }
 name="Zalupa Multiplayer Mod"
-supported_version="1.11.*"
 picture="thumbnail.png"
-remote_file_id="2826741028"
-
-# Replaced directories (do not delete)
 replace_path="common/abilities"
 replace_path="common/ai_areas"
 replace_path="common/ai_equipment"
@@ -29,3 +25,5 @@ replace_path="history/countries"
 replace_path="common/units/names_divisions"
 replace_path="common/units/names_ships"
 replace_path="events"
+supported_version="1.11.*"
+remote_file_id="2826741028"

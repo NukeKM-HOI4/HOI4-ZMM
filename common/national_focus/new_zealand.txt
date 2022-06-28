@@ -72,7 +72,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		available = {
@@ -454,7 +454,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		available = {
@@ -775,7 +775,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 35
+			factor = 100
 		}
 
 		available = {
@@ -861,7 +861,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 25
+			factor = 100
 		}
 
 		available = {
@@ -935,7 +935,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 25
+			factor = 100
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_bureau_of_industry
@@ -971,7 +971,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 25
+			factor = 100
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_wairarapa_sheep_farms
@@ -1074,7 +1074,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 25
+			factor = 100
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_domestic_arms_industry
@@ -1141,7 +1141,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 25
+			factor = 100
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_department_of_scientific_and_industrial_research
@@ -1341,7 +1341,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 25
+			factor = 50
 		}
 
 		available = {
@@ -1379,7 +1379,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 25
+			factor = 100
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_industrial_conscription
@@ -1420,7 +1420,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 25
+			factor = 0
 		}
 
 		available = {
@@ -1474,7 +1474,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 100
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_industrial_conscription
@@ -1577,7 +1577,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 0
 		}
 
 		available = {
@@ -1747,7 +1747,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 
 		available = {

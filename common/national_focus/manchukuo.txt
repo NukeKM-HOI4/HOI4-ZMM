@@ -60,7 +60,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 90
 		}
 
 		available = {
@@ -167,11 +167,10 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available = {
-			NOT = { has_idea = MAN_banditry }
 			NOT = { has_war_with = JAP }
 		}
 
@@ -360,7 +359,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available = {
@@ -401,7 +400,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 4
+			factor = 100
 		}
 
 		available = {

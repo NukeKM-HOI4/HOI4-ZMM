@@ -58,11 +58,7 @@ shared_focus = {
 	cost = 10
 
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 4
-			tag = CHI
-		}
+		factor = 100
 	}
 
 	available = {
