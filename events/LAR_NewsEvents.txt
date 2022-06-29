@@ -127,13 +127,11 @@ news_event = {
 							remove_core_of = SPB
 							remove_core_of = SPD
 							remove_core_of = SPC
-							add_core_of = ROOT
 						}
 						else = {
 							remove_claim_by = SPB
 							remove_claim_by = SPC
 							remove_claim_by = SPD
-							add_claim_by = SPA
 						}
 					}
 				}
@@ -168,14 +166,12 @@ news_event = {
 							}
 							remove_core_of = SPA
 							remove_core_of = SPD
-							remove_core_of = SPC
-							add_core_of = ROOT							
+							remove_core_of = SPC					
 						}
 						else = {
 							remove_claim_by = SPA
 							remove_claim_by = SPC
 							remove_claim_by = SPD
-							add_claim_by = SPB
 						}
 					}
 				}
@@ -368,10 +364,8 @@ news_event = {
 						limit = {
 							is_controlled_by = ROOT
 						}
-						add_core_of = ROOT
 					}
 					else = {
-						add_claim_by = SPA
 					}
 				}
 			}
@@ -392,10 +386,8 @@ news_event = {
 						limit = {
 							is_controlled_by = ROOT
 						}
-						add_core_of = ROOT
 					}
 					else = {
-						add_claim_by = SPB
 					}
 				}
 			}
@@ -550,13 +542,11 @@ news_event = {
 							remove_core_of = SPA
 							remove_core_of = SPB
 							remove_core_of = SPD
-							add_core_of = ROOT
 						}
 						else = {
 							remove_claim_by = SPB
 							remove_claim_by = SPA
 							remove_claim_by = SPD
-							add_claim_by = SPC
 						}
 					}
 				}
@@ -592,13 +582,11 @@ news_event = {
 							remove_core_of = SPA
 							remove_core_of = SPB
 							remove_core_of = SPC
-							add_core_of = ROOT
 						}
 						else = {
 							remove_claim_by = SPA
 							remove_claim_by = SPB
 							remove_claim_by = SPC
-							add_claim_by = SPD
 						}
 					}
 				}
@@ -980,10 +968,8 @@ news_event = {
 	# 					limit = {
 	# 						is_controlled_by = ROOT
 	# 					}
-	# 					add_core_of = ROOT
 	# 				}
 	# 					else = {
-	# 					add_claim_by = SPC
 	# 				}
 	# 			}
 	# 		}
@@ -1004,10 +990,8 @@ news_event = {
 	# 					limit = {
 	# 						is_controlled_by = ROOT
 	# 					}
-	# 					add_core_of = ROOT
 	# 				}
 	# 				else = {
-	# 					add_claim_by = SPD
 	# 				}
 	# 			}
 	# 		}
@@ -2336,12 +2320,10 @@ news_event = {
 					limit = {
 						is_controlled_by = ROOT
 					}
-					add_core_of = ROOT
 					remove_core_of = SPD
 					remove_core_of = SPC
 				}
 				else = {
-					add_claim_by = SPA
 					remove_claim_by = SPC
 					remove_claim_by = SPD
 				}
@@ -2477,12 +2459,10 @@ news_event = {
 					limit = {
 						is_controlled_by = ROOT
 					}
-					add_core_of = ROOT
 					remove_core_of = SPA
 					remove_core_of = SPB
 				}
 				else = {
-					add_claim_by = SPD
 					remove_claim_by = SPA
 					remove_claim_by = SPB
 				}
