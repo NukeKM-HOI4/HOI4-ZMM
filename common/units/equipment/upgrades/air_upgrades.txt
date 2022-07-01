@@ -21,6 +21,14 @@ upgrades = {
 		air_agility = -0.05
 	}
 	plane_range_upgrade = {
+		max_level = 5
+		
+		cost = air
+
+		air_range = 0.1
+		reliability = -0.1
+	}
+	plane_range_fighter_upgrade = {
 		max_level = 8
 		
 		cost = air
@@ -30,6 +38,14 @@ upgrades = {
 	}
 	cv_plane_range_upgrade = {
 		max_level = 5
+		
+		cost = air
+
+		air_range = 0.15
+		reliability = -0.1
+	}
+	cv_plane_range_fighter_upgrade = {
+		max_level = 8
 		
 		cost = air
 

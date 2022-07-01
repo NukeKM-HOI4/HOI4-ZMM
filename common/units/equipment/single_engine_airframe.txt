@@ -25,7 +25,7 @@ equipments = {
 
 		upgrades = {
 			plane_gun_upgrade
-			plane_range_upgrade
+			plane_range_fighter_upgrade
 			plane_engine_upgrade
 			plane_reliability_upgrade
 		}
@@ -78,7 +78,7 @@ equipments = {
 
 		upgrades = {
 			cv_plane_gun_upgrade
-			cv_plane_range_upgrade
+			plane_range_fighter_upgrade
 			plane_engine_upgrade
 			plane_reliability_upgrade
 		}
