@@ -2000,7 +2000,15 @@ mutually_exclusive = {
 		y = 7
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			completion_reward = {
-					add_ideas = bezumie_ships
+					if = {
+						limit = {
+							has_global_flag = no_asia_game
+						}
+						add_ideas = bezumie_ships_no_asia
+					}
+					else = {
+						add_ideas = bezumie_ships
+					}
 				}
 
 	}
