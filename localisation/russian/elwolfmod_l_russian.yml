@@ -1,6 +1,6 @@
-﻿l_english:
- steal_soviet_anti_tank_research:0 "Steal Soviet Anti-Tank Research"
- NO_ASIA_NAME:0 "The War in the West"
+﻿l_russian:
+ steal_soviet_anti_tank_research:0 "Украсть советские разработки"
+ NO_ASIA_NAME:0 "Война на Западе"
  NO_ASIA_DESC:0 "No asia. Takes out USA, AST, NZL, MEX, RAJ, MAN, SIA, JAP, East Indies, Malaysia, Philipines, The Islands, etc. UK has resources rights to USA resources, UK civ boosted to 70 civs 24 mils, AST, NZL, and RAJ guns added to UK, UK 300 more convoys 100 more trains, 1 research slot, and research discount on guns and artillery."
 
  SOV_behead_the_snake_no_lar_tt:0 "Trotsky will be assasinated in 100 days."
@@ -8,7 +8,7 @@
  continuous_recruitment_drive:0 "Recruitment Drive"
  continuous_recruitment_drive_desc:0 "Recruitment Drive"
 
- FE_START:0 "GREEN BUTTON"
+ FE_START:0 "Уйти в бытие"
  MATCHMAKING_SERVER_KICKED:0 "Bullied by chost."
  MATCHMAKING_SERVER_BANNED:0 "Killed by chost."
  PLAYER_BANNED:0 "$NAME$ was killed by the chost."
@@ -26,8 +26,8 @@
  EQUIPMENT_DESIGNER_SAVE_DESC:1 "Save this as a §Hnew design§!."
  EQUIPMENT_DESIGNER_SAVE_DESC_NO_CHANGE_TO_PARENT:1 "No changes will be made to the original design."
 
- SOV_collectivized_society:0 "Collectivized Society"
- peace_training:0 "Peacetime Training"
+ SOV_collectivized_society:0 "Пол страны бухает,пол страны производит"
+ peace_training:0 "Ужас первой мировой"
  ai_limiter:0 "Artificial Intelligence"
  assume_control_manchukuo:0 "Assume control of Manchukuo"
  assume_control_manchukuo_desc:0 "Assume control of Manchukuo"
@@ -43,7 +43,7 @@
  assume_control_british_raj_desc:0 "Assume control of the British Raj"
  assume_control_australia:0 "Assume control of Australia"
  assume_control_australia_desc:0 "Assume control of Austrlia"
- mobilize_mainland_garrison:0 "Mobilize mainland garrison"
+ mobilize_mainland_garrison:0 "Мобилизовать домашний гарнизон"
  elwolf_yug:0 "Peace - Treaty of Skopje" 
  elwolf_gre:0 "Peace - Treaty of Heraklion" 
  elwolf_fin:0 "Peace - Treaty of Helsinki" 
