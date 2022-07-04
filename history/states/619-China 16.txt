@@ -5,6 +5,7 @@ state={
 	manpower = 1430700
 	
 	state_category = pastoral
+	impassable = yes
 	
 	resources={
 		aluminium=2 # was: 2

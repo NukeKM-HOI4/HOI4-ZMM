@@ -5,6 +5,7 @@ state={
 	
 	state_category = rural
 
+	impassable = yes
 	history={
 		victory_points = {
 			1910 1

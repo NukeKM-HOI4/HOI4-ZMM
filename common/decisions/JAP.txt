@@ -666,46 +666,6 @@ foreign_politics = {
 			}
 		}
 	}
-	JAP_sue_for_peace_nuke_mission = {
-		available = {
-			has_global_flag = JAP_nuke_1
-			has_global_flag = JAP_nuke_2
-		}
-
-		visible = {
-			NOT = {
-				OR = {
-					controls_state = 536
-					controls_state = 533
-					controls_state = 534
-					controls_state = 532
-					controls_state = 282
-					controls_state = 530
-					controls_state = 531
-					controls_state = 528
-					controls_state = 529
-				}
-			}
-		}
-
-		modifier = {
-			
-		}
-
-		days_mission_timeout = 720
-		fire_only_once = yes
-
-		activation = {
-			has_tech = nukes
-			has_war_with = JAP
-		}
-
-		complete_effect = {
-			JAP = {
-				unlock_decision_tooltip = JAP_sue_for_peace_nuke
-			}
-		}
-	}
 
 	JAP_request_soviet_support = {
 
