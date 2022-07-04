@@ -4,6 +4,7 @@ state={
 	manpower = 2371
 
 	state_category = enclave
+	impassable = yes
 
 	history={
 		owner = FIN

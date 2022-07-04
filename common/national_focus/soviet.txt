@@ -8749,6 +8749,7 @@ ai_will_do = {
 				army_experience = 50
 				transfer_state = 146
 				transfer_state = 147
+				transfer_state = 722
 				
 			}
 
