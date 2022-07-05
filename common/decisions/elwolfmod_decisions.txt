@@ -311,6 +311,7 @@ operations = {
 				controls_state = 446
 				controls_state = 453
 			}
+			controls_state = 126
         }
 		visible = {
             tag = ENG
