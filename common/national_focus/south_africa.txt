@@ -72,7 +72,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		available = {
@@ -297,7 +297,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		available = {
@@ -719,7 +719,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 
 		available = {
@@ -897,10 +897,10 @@
 		y = 3
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
-			factor = 15
+			factor = 1
 		}
 
 		available = {
@@ -935,7 +935,7 @@
 		y = 4
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -999,7 +999,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 15
+			factor = 0
 		}
 
 		available = {
@@ -1031,7 +1031,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 45
+			factor = 0
 		}
 
 		available = {
@@ -1178,7 +1178,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		available = {
@@ -1560,7 +1560,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		available = {
@@ -1895,6 +1895,7 @@
 					instant_build = yes
 				}
 			}
+			
 		}
 
 		completion_reward = {
@@ -1909,10 +1910,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_seaward_defence_force_DY
@@ -1938,7 +1939,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 0.8
+			factor = 0
 		}
 
 		available = {
@@ -1976,11 +1977,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 0.2
-			modifier = {
-				has_war_with = ENG
-				factor = 10
-			}
+			factor = 0
 		}
 
 		available = {
@@ -2033,29 +2030,7 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = SAF_expand_the_simons_town_base_DY
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = SAF_expand_the_simons_town_base_NB
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = coastal_bunker
-					province = 12589
-					level = 2
-					instant_build = yes
-				}
-			}
+			
 		}
 
 		completion_reward = {
@@ -2069,12 +2044,7 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
+				add_extra_state_shared_building_slots = 1
 				set_state_flag = SAF_expand_the_simons_town_base_DY
 			}
 			if = {
