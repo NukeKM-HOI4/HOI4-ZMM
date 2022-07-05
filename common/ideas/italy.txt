@@ -47,8 +47,8 @@ bezumie_ships = {
 			}
 		}
 		modifier = {
-			industrial_capacity_factory = -0.25
-			production_speed_buildings_factor = -0.2
+			industrial_capacity_factory = -0.15
+			production_speed_buildings_factor = -0.1
 			industrial_capacity_dockyard = 0.25
 		}		
 	}
@@ -1231,42 +1231,37 @@ equipment_bonus = {
 			
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.075
+					instant = yes
 				}
-cv_fighter_equipment = {
-					build_cost_ic = -0.15
+				cv_fighter_equipment = {
+					build_cost_ic = -0.075
 					instant = yes
 				}
 				CAS_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.075
 					instant = yes
 				}
 				cv_CAS_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.075
 					instant = yes
 				}
 				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.075
 					instant = yes
 				}
 				nav_bomber_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.075
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.075
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.075
 					instant = yes
 				}
-				strat_bomber_equipment = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
-
-
 			}
 		}
 		
